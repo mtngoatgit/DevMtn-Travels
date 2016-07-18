@@ -23,6 +23,9 @@ angular.module('devmtnTravel').service('mainSrv', function(){
         id: 11223489,
         price: 1112
 
-
     }]
-})
+
+//  because we do "this.travel.." above, we don't need to do a function to retrieve this data
+
+
+}); //end of service
