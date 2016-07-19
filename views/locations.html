@@ -18,6 +18,8 @@
             <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
             is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
             <button ui-sref="booked({id:{{location.id }} })">Book Now</button>
+            <!--with this button click you are going to the booked view with an object as an argument, and that
+            object is the id variable bound to the id of the location clicked upon-->
         </div>
     </section>
 </section>

@@ -2,8 +2,10 @@
       you will need to write a function that checks the url params and then loops over the data object in the service and then returns
       the object the matches the id being passed in the url params. Do this in your controller -->
 <section class="booked-main-container" ng-style="background">
+    <!--it has to be ng-style instead of ng-model, because there are certain
+    properties associated with the code of ng-style that accepts css stuff-->
 
-    <h1>Thanks for trusting us with your trip to <br>  city  </h1>
+    <h1>Thanks for trusting us with your trip to <br>  {{ travelInfo[index].city }}  </h1>
    
 
     <!--The ui-sref should be pointing to the packages state -->
