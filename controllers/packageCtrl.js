@@ -1,6 +1,6 @@
 angular
     .module("devmtnTravel")
-    .controller("packageCtrl", function($scope, mainSrv) {
+    .controller("packageCtrl", function($scope, $stateParams, mainSrv) {
 
         $scope.getData = function() {
             $scope.packages = mainSrv.travelInfo

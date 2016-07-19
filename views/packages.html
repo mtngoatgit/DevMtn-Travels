@@ -12,7 +12,7 @@
 
         <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
        is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
-        <button ui-sref="booked({id: 'package' })">Book Now</button>
+        <button ui-sref="booked({id: {{package.id}} })">Book Now</button>
     </section>
 </section>
 
@@ -31,6 +31,6 @@
     </div>
     <div class="location-inner-right">
         <h3>Package Start At $ {{ package.price }}</h3>
-        <button ui-sref="booked({id: 'package' })">Book Now</button>
+        <button ui-sref="booked({id: {{package.id}} })">Book Now</button>
         <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
         is expecting an id to be passed along You can get that id from the data object that we are repeating over -->

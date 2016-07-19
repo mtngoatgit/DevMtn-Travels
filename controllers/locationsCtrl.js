@@ -1,6 +1,6 @@
 angular
     .module("devmtnTravel")
-    .controller("locationsCtrl", function($scope, mainSrv) {
+    .controller("locationsCtrl", function($scope, $stateParams, mainSrv) {
 
         $scope.getData = function() {
             $scope.locale = mainSrv.travelInfo;
